@@ -1,34 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Frontend NextJS
 
-## Getting Started
+Este é um boilerplate Next.js que foi desenvolvido no curso de React Avançado.
 
-First, run the development server:
+## Preview
 
-```bash
-npm run dev
-# or
-yarn dev
+<img src="./docs/assets/preview-desktop.png" width="100%">
+
+## Storybook
+
+<img src="./docs/assets/storybook-desktop.png" width="100%">
+
+
+## Como Iniciar?
+
+1 . **Executando a partir do boilerplate**
+
+Para executar o projeto com o boilerplate execute o seguindo comando:
+
+```
+  yarn create next-app -e https://github.com/geraldobl58/boilerplate
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Verificando no navegador**
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+    O projeto vai executar no seguinte endereço: `http://localhost:3000`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Commands
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- `dev`: runs your application on `localhost:3000`
+- `build`: creates the production build version
+- `start`: starts a simple server with the build production code
+- `lint`: runs the linter in all components and pages
+- `test`: runs jest to test all components and pages
+- `test:watch`: runs jest in watch mode
+- `storybook`: runs storybook on `localhost:6006`
+- `build-storybook`: create the build version of storybook
 
-## Learn More
+## Techs
 
-To learn more about Next.js, take a look at the following resources:
+ - [x] React
+ - [x] Typescript
+ - [x] NextJS
+ - [x] React Testing Library
+ - [x] Jest
+ - [x] Styled Components
+ - [x] Storybook
+ - [x] Eslint
+ - [x] Prettier
+ - [x] Husky
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Estrutura do projeto.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Diretórios
 
-## Deploy on Vercel
+Estrutura do projeto.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    .
+    ├── node_modules
+    ├── src
+    ├──────── components
+    ├──────── pages
+    ├──────── styles
+    ├── .gitignore
+    ├── .prettierrc
+    ├── .editorconfig
+    ├── .eslint.js
+    ├── package.json
+    └── README.md
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1.  **`/node_modules`**: Este diretório contém todos os módulos de código dos quais seu projeto depende (pacotes npm) são instalados automaticamente.
+
+2.  **`/src`**: Este diretório conterá todo o código relacionado ao que você verá no front-end do site (o que você vê no navegador), como o cabeçalho do site ou um modelo de página. `src` é uma convenção para "código fonte ".
+
+3.  **`.gitignore`**: Este arquivo informa ao git quais arquivos ele não deve rastrear / não manter um histórico de versão.
+
+4.  **`.prettierrc`**: Este é um arquivo de configuração para Prettier é uma ferramenta para ajudar a manter a formatação do código consistente e para manter um padrão. [Prettier](https://prettier.io/).
+
+5.  **`.eslint.json`**: ESLint é uma ferramenta de análise de código estática para identificar padrões problemáticos encontrados no código JavaScript. [Eslint](https://eslint.org/).
+
+6.  **`.editorconfig`**: O EditorConfig ajuda a manter estilos de codificação consistentes para vários desenvolvedores que trabalham no mesmo projeto em vários editores e IDEs. [Editorconfig](https://editorconfig.org/)
+
+7. **`package-lock.json`** Este é um arquivo gerado automaticamente com base nas versões exatas das dependências do npm que foram instaladas para o seu projeto. ** (Você não altera este arquivo diretamente)**
+
+8. **`package.json`**: Um arquivo é executado para projetos Node.js, que inclui itens como metadados (nome, autor do projeto etc.). Este arquivo é como o npm sabe quais pacotes instalar para o seu projeto.
